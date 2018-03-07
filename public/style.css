@@ -33,7 +33,7 @@ input {
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
-  margin-left: 75%;
+  margin-left: 60%;
   margin-top: 185px;
 }
 
@@ -167,7 +167,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3155ed', end
   padding-left: 20px;
   z-index: 1000;
   position: relative;
-  top: -1070px;
+  top: -1030px;
   padding-top: 1px;
 }
 
@@ -191,7 +191,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3155ed', end
   width: 35%;
   background-color: #ffffff;
   box-shadow: 5px 10px 8px #888888;
-  margin-left: 140px;
+  margin-left: 80px;
   padding-left: 20px;
   display: flex;
 
@@ -204,7 +204,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3155ed', end
 }
 
 #date{
-  padding-left: 50%;
+  padding-left: 40%;
+  margin-top: -75px;
 }
 
 #cal{

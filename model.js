@@ -3,10 +3,10 @@ mongoose.connect("mongodb://midtermTest:dixiestate@ds153198.mlab.com:53198/midte
 
 var Client = mongoose.model("Client",
 {
-  clientname: {type: String, required: [true, "Enter Clients full name"]},
+  clientname: { type: String, required: [true, "Enter Clients full name"] },
   address: {type: String, required: [true, "Enter address"]},
   phone: {type: Number, required: [true, "Enter phone number"]},
-  email: {type: String, required: [true, "Enter email"]},
+  email: {type: String, required: [true, "Enter email"]}
 });
 
 var Meeting = mongoose.model("Meeting", {
