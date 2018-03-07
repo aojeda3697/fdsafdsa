@@ -2,7 +2,6 @@ var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
 var model = require("./model.js");
-var serverStatic = require("serve-static");
 app.set('port', (process.env.PORT || 8080));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('public'));
