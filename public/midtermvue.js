@@ -6,14 +6,14 @@ var moredata = [];
 var clientupdate = [];
 
 var fetchmeetings = function () {
-  return fetch('https://calm-bastion-12932.herokuapp.com/meetings').then(function (response) {
+  return fetch('https://peaceful-chamber-40770.herokuapp.com/meetings').then(function (response) {
     return response.json();
 
   });
 };
 
 var fetchclients = function () {
-  return fetch('https://calm-bastion-12932.herokuapp.com/clients').then(function (response) {
+  return fetch('https://peaceful-chamber-40770.herokuapp.com/clients').then(function (response) {
     return response.json();
 
   });
@@ -104,7 +104,7 @@ var app = new Vue({
     remove: function(item){
       var k = confirm("you sure you want to delete?");
       if (k == true) {
-        fetch('https://calm-bastion-12932.herokuapp.com/clients/'+item._id, {
+        fetch('https://peaceful-chamber-40770.herokuapp.com/clients/'+item._id, {
         method: 'DELETE', // or 'PUT
         headers: {
         },
@@ -131,7 +131,7 @@ var app = new Vue({
 
     updateclient: function(){
       var query = "clientname="+ encodeURIComponent(this.updateitem.clientname) + "&address=" + encodeURIComponent(this.updateitem.address) + "&phone=" + encodeURIComponent(this.updateitem.phone) + "&email=" + encodeURIComponent(this.updateitem.email);
-      fetch('https://calm-bastion-12932.herokuapp.com/clients/'+app.updateitem._id, {
+      fetch('https://peaceful-chamber-40770.herokuapp.com/clients/'+app.updateitem._id, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
@@ -160,7 +160,7 @@ var app = new Vue({
       console.log(meeting._id);
       var r = confirm("are you sure you want to remove date?");
       if (r == true){
-        fetch('https://calm-bastion-12932.herokuapp.com/meetings/'+meeting._id, {
+        fetch('https://peaceful-chamber-40770.herokuapp.com/meetings/'+meeting._id, {
         method: 'DELETE', // or 'PUT
         headers: {
         },
@@ -196,7 +196,7 @@ var app = new Vue({
 
       }
       else
-      { fetch('https://calm-bastion-12932.herokuapp.com/clients', {
+      { fetch('https://peaceful-chamber-40770.herokuapp.com/clients', {
       method: 'POST', // or 'PUT
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded'
@@ -230,7 +230,7 @@ send: function (){
   if(this.newmeeting.atime.length == 0){
 
   } else {
-  fetch('https://calm-bastion-12932.herokuapp.com/meetings', {
+  fetch('https://peaceful-chamber-40770.herokuapp.com/meetings', {
   method: 'POST', // or 'PUT
   headers: {
     'Content-Type': 'application/x-www-form-urlencoded'
